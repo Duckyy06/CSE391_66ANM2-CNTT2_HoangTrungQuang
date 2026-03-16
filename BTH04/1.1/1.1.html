@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise 1.1</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Bảng điểm sinh viên</h1>
+        </div>
+
+        <div class="input-card">
+            <div class="input-field">
+                <input type="text" name="name" id="name" placeholder="Nhập họ và tên">
+            </div>
+            <div class="input-field">
+                <input type="text" name="mark" id="mark" placeholder="Nhập điểm">
+            </div>
+            <button type="submit" class="input-btn">Thêm</button>
+        </div>
+
+        <div class="table-card">
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ Tên</th>
+                            <th>Điểm</th>
+                            <th>Xếp Loại</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-item">
+                <span class="stat-label">Tổng sinh viên:</span>
+                <span class="stat-val" id="stat-total"></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Điểm trung bình:</span>
+                <span class="stat-val" id="stat-avg"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
